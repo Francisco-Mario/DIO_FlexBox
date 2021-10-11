@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 2px solid #000;
+        }
+
+        .items{
+            flex: 1;
+            background-color:#deb887;
+            margin: 5px;
+            color: #FFF;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .o1{
+            order: 1;
+        }
+
+        .o2{
+            order: 2;
+        }
+        
+        .o3{
+            order: 3;
+        }
+        
+        .o4{
+            order: 4;
+        }
+        
+        .direction{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>order - row</h1>
+
+    <h3>order: 0</h3>
+
+    <div class="flex-container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">4n</div>
+        <div class="items">4m</div>
+    </div>
+
+    <h3>order: diferentes</h3>
+
+    <div class="flex-container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items o2">4</div>
+        <div class="items 03">4n</div>
+        <div class="items o1">4m</div>
+    </div>
+
+    <h3>order: diferentes</h3>
+
+    <div class="flex-container">
+        <div class="items o4">1</div>
+        <div class="items o2">3</div>
+        <div class="items l3">4n</div>
+        <div class="items 01">4m</div>
+    </div>
+
+    <!-- ======================================================== -->
+
+    <h1>order - column</h1>
+
+    <h3>order: 0</h3>
+
+    <div class="flex-container direction">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">4n</div>
+        <div class="items">4m</div>
+    </div>
+
+    <h3>order: diferentes</h3>
+
+    <div class="flex-container direction">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items o2">4</div>
+        <div class="items 03">4n</div>
+        <div class="items o1">4m</div>
+    </div>
+
+    <h3>order: diferentes</h3>
+
+    <div class="flex-container direction">
+        <div class="items o3">7</div>
+        <div class="items o1">9</div>
+        <div class="items o3">1</div>
+        <div class="items 02">4</div>
+        <div class="items 03">4m</div>
+        <div class="items 01">4m</div>
+    </div>
+
+    <!-- ======================================================== -->
+
+</body>
+</html>
